@@ -15,6 +15,6 @@ jobs:
     test:
         runs-on: ubuntu-latest
         steps:
-            - run: echo "Event Triggered: ${{ github.event_name }}"
-            - run: echo "Branch: ${{ github.ref }}"
+            - run: 'echo "Event Triggered: ${{ github.event_name }}"'
+            - run: 'echo "Branch: ${{ github.ref }}"'
 
