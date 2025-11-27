@@ -1,0 +1,17 @@
+name: Steps Demo
+
+on:
+    workflow_dispatch
+
+jobs:
+    steps_demo:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+
+            - name: show PWD
+              run: pwd
+
+            - name: List files
+              run: ls -la
